@@ -4,10 +4,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../utils/size/size_config.dart';
 import '../bloc/shuffle_bloc.dart';
 import '../bloc/shuffle_event.dart';
-import 'home_square.dart';
+import 'app_square.dart';
 
-class HomeBoard extends StatelessWidget {
-  const HomeBoard({Key? key}) : super(key: key);
+class AppBoard extends StatelessWidget {
+  const AppBoard({Key? key}) : super(key: key);
 
   double get kSquarePadding => 4.0;
 
@@ -44,7 +44,7 @@ class HomeBoard extends StatelessWidget {
                         onTap: () {
                           context.read<ShuffleBloc>().add(ShuffleMoved(e));
                         },
-                        child: HomeSquare(
+                        child: AppSquare(
                           size: Size(
                             sizeSquare.width - (2 * kSquarePadding),
                             sizeSquare.height - (2 * kSquarePadding),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../bloc/shuffle_bloc.dart';
-import 'home_board.dart';
+import 'app_board.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -34,7 +34,7 @@ class _AppViewState extends State<AppView> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: const [
             Spacer(),
-            HomeBoard(),
+            AppBoard(),
             Spacer(),
           ],
         ),

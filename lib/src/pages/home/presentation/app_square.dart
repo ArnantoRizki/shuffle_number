@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeSquare extends StatelessWidget {
-  const HomeSquare({
+class AppSquare extends StatelessWidget {
+  const AppSquare({
     Key? key,
     required this.label,
     required this.size,
