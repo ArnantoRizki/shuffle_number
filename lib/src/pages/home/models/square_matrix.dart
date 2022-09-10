@@ -10,8 +10,8 @@ class SquareMatrix extends Equatable {
   final int vertical;
 
   factory SquareMatrix.normal() => const SquareMatrix(
-        vertical: 4,
-        horizontal: 3,
+        vertical: 5,
+        horizontal: 5,
       );
 
   int get countSlots => horizontal * vertical;

@@ -32,5 +32,11 @@ class ShuffleBloc extends Bloc<ShuffleEvent, ShuffleState>
 
       emit(state.replaceSquares(squares: List<SquareNumber>.from(squares)));
     });
+
+    on<ShuffleMatrixChanged>((event, emit) {
+      if (event.matrix != state.matrix) {
+        emit(state.replaceMatrix(matrix: event.matrix));
+      }
+    });
   }
 }

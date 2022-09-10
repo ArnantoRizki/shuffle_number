@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 
+import '../models/square_matrix.dart';
 import '../models/square_number.dart';
 
 abstract class ShuffleEvent extends Equatable {
@@ -18,4 +19,13 @@ class ShuffleMoved extends ShuffleEvent {
 
   @override
   List<Object?> get props => [square];
+}
+
+class ShuffleMatrixChanged extends ShuffleEvent {
+  final SquareMatrix matrix;
+
+  const ShuffleMatrixChanged(this.matrix);
+
+  @override
+  List<Object?> get props => [matrix];
 }
