@@ -1,10 +1,4 @@
-import 'package:equatable/equatable.dart';
-
-import '../../../utils/calculate/empty_slot.dart';
-import '../../../utils/calculate/initial_square.dart';
-import '../../../utils/calculate/winning_state.dart';
-import '../models/square_matrix.dart';
-import '../models/square_number.dart';
+part of 'shuffle_bloc.dart';
 
 class ShuffleState extends Equatable {
   const ShuffleState({

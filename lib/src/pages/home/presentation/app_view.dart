@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../bloc/shuffle_bloc.dart';
-import '../bloc/shuffle_event.dart';
 import '../models/square_matrix.dart';
 import 'app_board.dart';
 import 'app_dialog.dart';

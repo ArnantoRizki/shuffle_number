@@ -1,7 +1,4 @@
-import 'package:equatable/equatable.dart';
-
-import '../models/square_matrix.dart';
-import '../models/square_number.dart';
+part of 'shuffle_bloc.dart';
 
 abstract class ShuffleEvent extends Equatable {
   const ShuffleEvent();

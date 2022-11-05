@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../utils/size/size_config.dart';
 import '../bloc/shuffle_bloc.dart';
-import '../bloc/shuffle_event.dart';
 import 'app_square.dart';
 
 class AppBoard extends StatelessWidget {

@@ -1,9 +1,15 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../utils/calculate/empty_slot.dart';
+import '../../../utils/calculate/initial_square.dart';
+import '../../../utils/calculate/winning_state.dart';
 import '../../../utils/mixins/shuffle_move_mixin.dart';
+import '../models/square_matrix.dart';
 import '../models/square_number.dart';
-import 'shuffle_event.dart';
-import 'shuffle_state.dart';
+
+part 'shuffle_event.dart';
+part 'shuffle_state.dart';
 
 class ShuffleBloc extends Bloc<ShuffleEvent, ShuffleState>
     with ShuffleMoveMixin {
